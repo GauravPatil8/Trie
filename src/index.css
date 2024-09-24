@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "hw";
+    src:local("Cheveuxdange"),  
+    url("./assets/fonts/Cheveuxdange.ttf") format("TrueType");
+}
