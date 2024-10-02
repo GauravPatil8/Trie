@@ -1,8 +1,13 @@
 import React from 'react'
-// import image from '../assets/icons/hierarchy.png'
-const Card = ({ bgColor, text ,image}) => {
+import { useNavigate } from 'react-router-dom';
+const Card = ({ bgColor, text ,image, navi}) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`${navi}`);
+    }
   return (
-    <button>
+    <button onClick={handleClick}>
         <div className='h-96 w-96 bg-white mr-24 ml-24 mt-5 mb-20 border border-black hover:cursor-pointer hover:shadow-lg hover:shadow-black'
         >
             <div className='align-middle font-hw text-[#FFFFFF] text-5xl text-center p-6  border-black'

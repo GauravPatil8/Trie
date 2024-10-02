@@ -1,13 +1,9 @@
-import { useState } from 'react'
-import Home from './components/Home'
-import Footer from './components/Footer'
+import HomePage from './pages/HomePage';
 
 function App() {
-
   return (
     <>
-      <Home/>
-      <Footer/>
+      <HomePage/>
     </>
   )
 }
