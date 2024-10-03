@@ -8,11 +8,8 @@ const Card = ({ bgColor, text ,image, navi}) => {
     }
   return (
     <button onClick={handleClick}>
-        <div className='h-96 w-96 bg-white mr-24 ml-24 mt-5 mb-20 border border-black hover:cursor-pointer hover:shadow-lg hover:shadow-black'
-        >
-            <div className='align-middle font-hw text-[#FFFFFF] text-5xl text-center p-6  border-black'
-            style={{backgroundColor: bgColor}}
-            >
+        <div className='h-96 w-96 bg-white mb-20 border border-black hover:cursor-pointer hover:shadow-lg hover:shadow-black'>
+            <div className='align-middle font-hw text-[#FFFFFF] text-5xl text-center p-6  border-black' style={{backgroundColor: bgColor}}>
                {text}
             </div>
             <div className='align-middle justify-center'>
